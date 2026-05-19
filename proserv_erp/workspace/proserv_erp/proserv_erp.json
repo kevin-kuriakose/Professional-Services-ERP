@@ -1,7 +1,6 @@
 {
   "category": "Modules",
   "charts": [],
-  "content": "[{\"id\": \"hd-clients\", \"type\": \"header\", \"data\": {\"text\": \"Clients and CRM\", \"col\": 12}}, {\"id\": \"sc-client\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Client\", \"col\": 3}}, {\"id\": \"sc-client-contact\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Client Contact\", \"col\": 3}}, {\"id\": \"sc-lead\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"PS Lead\", \"col\": 3}}, {\"id\": \"sc-opp\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Opportunity\", \"col\": 3}}, {\"id\": \"hd-staff\", \"type\": \"header\", \"data\": {\"text\": \"Staff and Services\", \"col\": 12}}, {\"id\": \"sc-staff\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Staff Profile\", \"col\": 3}}, {\"id\": \"sc-svccat\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Service Category\", \"col\": 3}}, {\"id\": \"sc-svc\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Service\", \"col\": 3}}, {\"id\": \"sc-ratecard\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Rate Card\", \"col\": 3}}, {\"id\": \"hd-admin\", \"type\": \"header\", \"data\": {\"text\": \"Administration\", \"col\": 12}}, {\"id\": \"sc-expcat\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Expense Category\", \"col\": 3}}, {\"id\": \"sc-practcert\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Practice Certificate\", \"col\": 3}}, {\"id\": \"sc-pip\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Professional Indemnity Policy\", \"col\": 3}}, {\"id\": \"hd-engagements\", \"type\": \"header\", \"data\": {\"text\": \"Engagements and Operations\", \"col\": 12}}, {\"id\": \"sc-eng\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Engagement\", \"col\": 3}}, {\"id\": \"sc-engms\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Engagement Milestone\", \"col\": 3}}, {\"id\": \"sc-cck\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Conflict Check\", \"col\": 3}}, {\"id\": \"sc-ra\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Resource Allocation\", \"col\": 3}}, {\"id\": \"sc-ts\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Timesheet Entry\", \"col\": 3}}, {\"id\": \"sc-exc\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Expense Claim\", \"col\": 3}}, {\"id\": \"sc-ret\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Retainer Agreement\", \"col\": 3}}, {\"id\": \"hd-billing\", \"type\": \"header\", \"data\": {\"text\": \"Billing\", \"col\": 12}}, {\"id\": \"sc-fn\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fee Note\", \"col\": 3}}, {\"id\": \"sc-pinv\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Proforma Invoice\", \"col\": 3}}, {\"id\": \"sc-rcon\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Retainer Consumption\", \"col\": 3}}, {\"id\": \"sc-wo\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Write Off\", \"col\": 3}}, {\"id\": \"hd-docs\", \"type\": \"header\", \"data\": {\"text\": \"Documents and CRM\", \"col\": 12}}, {\"id\": \"sc-edoc\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Engagement Document\", \"col\": 3}}, {\"id\": \"sc-dtmpl\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Document Template\", \"col\": 3}}, {\"id\": \"sc-prop\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Proposal\", \"col\": 3}}, {\"id\": \"sc-loe\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Letter of Engagement\", \"col\": 3}}, {\"id\": \"sc-bda\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Business Development Activity\", \"col\": 3}}, {\"id\": \"sc-ref\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Referral\", \"col\": 3}}, {\"id\": \"sc-css\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Client Satisfaction Survey\", \"col\": 3}}, {\"id\": \"sc-ir\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Internal Review\", \"col\": 3}}, {\"id\": \"sc-compl\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Complaint\", \"col\": 3}}, {\"id\": \"hd-compliance\", \"type\": \"header\", \"data\": {\"text\": \"Compliance and Analytics\", \"col\": 12}}, {\"id\": \"sc-co\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Compliance Obligation\", \"col\": 3}}, {\"id\": \"sc-kyc\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"KYC Record\", \"col\": 3}}, {\"id\": \"sc-rf\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Regulatory Filing\", \"col\": 3}}, {\"id\": \"sc-rtl\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Retainer Task Log\", \"col\": 3}}, {\"id\": \"sc-rrv\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Retainer Review\", \"col\": 3}}, {\"id\": \"sc-cap\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Capacity Plan\", \"col\": 3}}, {\"id\": \"sc-engpro\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Engagement Profitability\", \"col\": 3}}, {\"id\": \"sc-pad\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Practice Area Dashboard\", \"col\": 3}}, {\"id\": \"sc-clipro\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Client Profitability\", \"col\": 3}}, {\"id\": \"hd-reports\", \"type\": \"header\", \"data\": {\"text\": \"Reports\", \"col\": 12}}, {\"id\": \"sc-rpt-0\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Utilization Dashboard\", \"col\": 3}}, {\"id\": \"sc-rpt-1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Revenue Report\", \"col\": 3}}, {\"id\": \"sc-rpt-2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Outstanding Fees Report\", \"col\": 3}}, {\"id\": \"sc-rpt-3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Engagement Profitability Report\", \"col\": 3}}, {\"id\": \"sc-rpt-4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Realization Rate Report\", \"col\": 3}}, {\"id\": \"sc-rpt-5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Resource Utilization Report\", \"col\": 3}}, {\"id\": \"sc-rpt-6\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Retainer Utilization Report\", \"col\": 3}}, {\"id\": \"sc-rpt-7\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"WIP Report\", \"col\": 3}}, {\"id\": \"sc-rpt-8\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Business Development Pipeline\", \"col\": 3}}, {\"id\": \"sc-rpt-9\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Client Profitability Report\", \"col\": 3}}, {\"id\": \"sc-rpt-10\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Compliance Calendar\", \"col\": 3}}, {\"id\": \"sc-rpt-11\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Timesheet Compliance Report\", \"col\": 3}}, {\"id\": \"sc-rpt-12\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Expense Reimbursement Status\", \"col\": 3}}, {\"id\": \"sc-rpt-13\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Proposal Win Rate Report\", \"col\": 3}}, {\"id\": \"sc-rpt-14\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"KYC Expiry Report\", \"col\": 3}}]",
   "doctype": "Workspace",
   "for_user": "",
   "icon": "uil uil-briefcase",
@@ -13,338 +12,459 @@
   "public": 1,
   "roles": [],
   "sequence_id": 1,
-  "shortcuts": [
+  "shortcuts": [],
+  "title": "ProEdge",
+  "links": [
+    {
+      "label": "Clients and CRM",
+      "type": "Card Break",
+      "hidden": 0
+    },
     {
       "label": "Client",
       "link_to": "Client",
-      "type": "DocType",
-      "name": "sc-client"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
       "label": "Client Contact",
       "link_to": "Client Contact",
-      "type": "DocType",
-      "name": "sc-client-contact"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
       "label": "PS Lead",
       "link_to": "PS Lead",
-      "type": "DocType",
-      "name": "sc-lead"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
       "label": "Opportunity",
       "link_to": "Opportunity",
-      "type": "DocType",
-      "name": "sc-opp"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Staff and Services",
+      "type": "Card Break",
+      "hidden": 0
     },
     {
       "label": "Staff Profile",
       "link_to": "Staff Profile",
-      "type": "DocType",
-      "name": "sc-staff"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
       "label": "Service Category",
       "link_to": "Service Category",
-      "type": "DocType",
-      "name": "sc-svccat"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Service",
       "link_to": "Service",
-      "type": "DocType",
-      "name": "sc-svc"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
       "label": "Rate Card",
       "link_to": "Rate Card",
-      "type": "DocType",
-      "name": "sc-ratecard"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Administration",
+      "type": "Card Break",
+      "hidden": 0
     },
     {
       "label": "Expense Category",
       "link_to": "Expense Category",
-      "type": "DocType",
-      "name": "sc-expcat"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Practice Certificate",
       "link_to": "Practice Certificate",
-      "type": "DocType",
-      "name": "sc-practcert"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Professional Indemnity Policy",
       "link_to": "Professional Indemnity Policy",
-      "type": "DocType",
-      "name": "sc-pip"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Engagements and Operations",
+      "type": "Card Break",
+      "hidden": 0
     },
     {
       "label": "Engagement",
       "link_to": "Engagement",
-      "type": "DocType",
-      "name": "sc-eng"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
       "label": "Engagement Milestone",
       "link_to": "Engagement Milestone",
-      "type": "DocType",
-      "name": "sc-engms"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Conflict Check",
       "link_to": "Conflict Check",
-      "type": "DocType",
-      "name": "sc-cck"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Resource Allocation",
       "link_to": "Resource Allocation",
-      "type": "DocType",
-      "name": "sc-ra"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Timesheet Entry",
       "link_to": "Timesheet Entry",
-      "type": "DocType",
-      "name": "sc-ts"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
       "label": "Expense Claim",
       "link_to": "Expense Claim",
-      "type": "DocType",
-      "name": "sc-exc"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Retainer Agreement",
       "link_to": "Retainer Agreement",
-      "type": "DocType",
-      "name": "sc-ret"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Billing",
+      "type": "Card Break",
+      "hidden": 0
     },
     {
       "label": "Fee Note",
       "link_to": "Fee Note",
-      "type": "DocType",
-      "name": "sc-fn"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
       "label": "Proforma Invoice",
       "link_to": "Proforma Invoice",
-      "type": "DocType",
-      "name": "sc-pinv"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Retainer Consumption",
       "link_to": "Retainer Consumption",
-      "type": "DocType",
-      "name": "sc-rcon"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Write Off",
       "link_to": "Write Off",
-      "type": "DocType",
-      "name": "sc-wo"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Documents and CRM",
+      "type": "Card Break",
+      "hidden": 0
     },
     {
       "label": "Engagement Document",
       "link_to": "Engagement Document",
-      "type": "DocType",
-      "name": "sc-edoc"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
       "label": "Document Template",
       "link_to": "Document Template",
-      "type": "DocType",
-      "name": "sc-dtmpl"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Proposal",
       "link_to": "Proposal",
-      "type": "DocType",
-      "name": "sc-prop"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Letter of Engagement",
       "link_to": "Letter of Engagement",
-      "type": "DocType",
-      "name": "sc-loe"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Business Development Activity",
       "link_to": "Business Development Activity",
-      "type": "DocType",
-      "name": "sc-bda"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Referral",
       "link_to": "Referral",
-      "type": "DocType",
-      "name": "sc-ref"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Client Satisfaction Survey",
       "link_to": "Client Satisfaction Survey",
-      "type": "DocType",
-      "name": "sc-css"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Internal Review",
       "link_to": "Internal Review",
-      "type": "DocType",
-      "name": "sc-ir"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Complaint",
       "link_to": "Complaint",
-      "type": "DocType",
-      "name": "sc-compl"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Compliance and Analytics",
+      "type": "Card Break",
+      "hidden": 0
     },
     {
       "label": "Compliance Obligation",
       "link_to": "Compliance Obligation",
-      "type": "DocType",
-      "name": "sc-co"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
       "label": "KYC Record",
       "link_to": "KYC Record",
-      "type": "DocType",
-      "name": "sc-kyc"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Regulatory Filing",
       "link_to": "Regulatory Filing",
-      "type": "DocType",
-      "name": "sc-rf"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Retainer Task Log",
       "link_to": "Retainer Task Log",
-      "type": "DocType",
-      "name": "sc-rtl"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Retainer Review",
       "link_to": "Retainer Review",
-      "type": "DocType",
-      "name": "sc-rrv"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Capacity Plan",
       "link_to": "Capacity Plan",
-      "type": "DocType",
-      "name": "sc-cap"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Engagement Profitability",
       "link_to": "Engagement Profitability",
-      "type": "DocType",
-      "name": "sc-engpro"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Practice Area Dashboard",
       "link_to": "Practice Area Dashboard",
-      "type": "DocType",
-      "name": "sc-pad"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
     },
     {
       "label": "Client Profitability",
       "link_to": "Client Profitability",
-      "type": "DocType",
-      "name": "sc-clipro"
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Reports",
+      "type": "Card Break",
+      "hidden": 0
     },
     {
       "label": "Utilization Dashboard",
       "link_to": "Utilization Dashboard",
-      "type": "Report",
-      "name": "sc-rpt-0"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Revenue Report",
       "link_to": "Revenue Report",
-      "type": "Report",
-      "name": "sc-rpt-1"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Outstanding Fees Report",
       "link_to": "Outstanding Fees Report",
-      "type": "Report",
-      "name": "sc-rpt-2"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Engagement Profitability Report",
       "link_to": "Engagement Profitability Report",
-      "type": "Report",
-      "name": "sc-rpt-3"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Realization Rate Report",
       "link_to": "Realization Rate Report",
-      "type": "Report",
-      "name": "sc-rpt-4"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Resource Utilization Report",
       "link_to": "Resource Utilization Report",
-      "type": "Report",
-      "name": "sc-rpt-5"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Retainer Utilization Report",
       "link_to": "Retainer Utilization Report",
-      "type": "Report",
-      "name": "sc-rpt-6"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "WIP Report",
       "link_to": "WIP Report",
-      "type": "Report",
-      "name": "sc-rpt-7"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Business Development Pipeline",
       "link_to": "Business Development Pipeline",
-      "type": "Report",
-      "name": "sc-rpt-8"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Client Profitability Report",
       "link_to": "Client Profitability Report",
-      "type": "Report",
-      "name": "sc-rpt-9"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Compliance Calendar",
       "link_to": "Compliance Calendar",
-      "type": "Report",
-      "name": "sc-rpt-10"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Timesheet Compliance Report",
       "link_to": "Timesheet Compliance Report",
-      "type": "Report",
-      "name": "sc-rpt-11"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Expense Reimbursement Status",
       "link_to": "Expense Reimbursement Status",
-      "type": "Report",
-      "name": "sc-rpt-12"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "Proposal Win Rate Report",
       "link_to": "Proposal Win Rate Report",
-      "type": "Report",
-      "name": "sc-rpt-13"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
       "label": "KYC Expiry Report",
       "link_to": "KYC Expiry Report",
-      "type": "Report",
-      "name": "sc-rpt-14"
+      "link_type": "Report",
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     }
   ],
-  "links": [],
-  "title": "ProEdge"
+  "content": "[{\"id\": \"hd-1\", \"type\": \"card\", \"data\": {\"card_name\": \"Clients and CRM\", \"col\": 4}}, {\"id\": \"hd-2\", \"type\": \"card\", \"data\": {\"card_name\": \"Staff and Services\", \"col\": 4}}, {\"id\": \"hd-3\", \"type\": \"card\", \"data\": {\"card_name\": \"Administration\", \"col\": 4}}, {\"id\": \"hd-4\", \"type\": \"card\", \"data\": {\"card_name\": \"Engagements and Operations\", \"col\": 4}}, {\"id\": \"hd-5\", \"type\": \"card\", \"data\": {\"card_name\": \"Billing\", \"col\": 4}}, {\"id\": \"hd-6\", \"type\": \"card\", \"data\": {\"card_name\": \"Documents and CRM\", \"col\": 4}}, {\"id\": \"hd-7\", \"type\": \"card\", \"data\": {\"card_name\": \"Compliance and Analytics\", \"col\": 4}}, {\"id\": \"hd-8\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}]"
 }
