@@ -1,0 +1,90 @@
+{
+  "actions": [],
+  "autoname": "field:template_name",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "template_name",
+    "service_category",
+    "document_type",
+    "version",
+    "content",
+    "created_by",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "template_name",
+      "fieldtype": "Data",
+      "label": "Template Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "service_category",
+      "fieldtype": "Link",
+      "label": "Service Category",
+      "options": "Service Category"
+    },
+    {
+      "fieldname": "document_type",
+      "fieldtype": "Select",
+      "label": "Document Type",
+      "options": "\nProposal\nLetter of Engagement\nNDA\nContract\nStatement of Work\nReport\nOpinion Letter\nCompliance Certificate\nTax Return\nAudit Report\nBoard Resolution\nCorrespondence\nResearch Note\nInvoice\nReceipt",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "version",
+      "fieldtype": "Data",
+      "label": "Version"
+    },
+    {
+      "fieldname": "content",
+      "fieldtype": "Text Editor",
+      "label": "Content"
+    },
+    {
+      "fieldname": "created_by",
+      "fieldtype": "Link",
+      "label": "Created By",
+      "options": "User"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nArchived",
+      "default": "Active",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Document Template",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "template_name",
+  "track_changes": 1
+}

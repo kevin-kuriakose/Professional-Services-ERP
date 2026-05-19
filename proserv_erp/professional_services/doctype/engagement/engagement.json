@@ -1,0 +1,243 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "engagement_name",
+    "client",
+    "service_type",
+    "engagement_type",
+    "practice_area",
+    "section_team",
+    "lead_partner_or_manager",
+    "team_members",
+    "section_dates",
+    "start_date",
+    "end_date",
+    "section_hours",
+    "estimated_hours",
+    "actual_hours",
+    "section_financials",
+    "budget_amount",
+    "billed_amount",
+    "billing_method",
+    "income_account",
+    "cost_center",
+    "section_deliverables",
+    "deliverables",
+    "section_detail",
+    "description",
+    "scope_of_work",
+    "section_status",
+    "status",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "ENG-.YYYY.-.#####",
+      "default": "ENG-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "engagement_name",
+      "fieldtype": "Data",
+      "label": "Engagement Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "client",
+      "fieldtype": "Link",
+      "label": "Client",
+      "options": "Client",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "service_type",
+      "fieldtype": "Link",
+      "label": "Service Type",
+      "options": "Service"
+    },
+    {
+      "fieldname": "engagement_type",
+      "fieldtype": "Select",
+      "label": "Engagement Type",
+      "options": "\nProject\nMonthly Retainer\nAnnual Retainer\nAdvisory\nOne Time\nFramework Agreement",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "practice_area",
+      "fieldtype": "Select",
+      "label": "Practice Area",
+      "options": "\nLegal Services\nAccounting and Audit\nTax and GST\nManagement Consulting\nIT Consulting\nStrategy Advisory\nHR Consulting\nFinancial Advisory\nEngineering Consulting\nDesign and Creative\nMarketing and Branding\nEnvironmental Consulting\nESG and Sustainability\nM and A Advisory\nRecruitment and Staffing\nTraining and L and D\nPayroll Services\nCompany Secretarial\nCyber Security\nData and Analytics"
+    },
+    {
+      "fieldname": "section_team",
+      "fieldtype": "Section Break",
+      "label": "Team"
+    },
+    {
+      "fieldname": "lead_partner_or_manager",
+      "fieldtype": "Link",
+      "label": "Lead Partner / Manager",
+      "options": "Staff Profile"
+    },
+    {
+      "fieldname": "team_members",
+      "fieldtype": "Table",
+      "label": "Team Members",
+      "options": "Engagement Team Member"
+    },
+    {
+      "fieldname": "section_dates",
+      "fieldtype": "Section Break",
+      "label": "Dates"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date"
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date"
+    },
+    {
+      "fieldname": "section_hours",
+      "fieldtype": "Section Break",
+      "label": "Hours"
+    },
+    {
+      "fieldname": "estimated_hours",
+      "fieldtype": "Float",
+      "label": "Estimated Hours"
+    },
+    {
+      "fieldname": "actual_hours",
+      "fieldtype": "Float",
+      "label": "Actual Hours",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_financials",
+      "fieldtype": "Section Break",
+      "label": "Financials"
+    },
+    {
+      "fieldname": "budget_amount",
+      "fieldtype": "Currency",
+      "label": "Budget Amount"
+    },
+    {
+      "fieldname": "billed_amount",
+      "fieldtype": "Currency",
+      "label": "Billed Amount",
+      "read_only": 1
+    },
+    {
+      "fieldname": "billing_method",
+      "fieldtype": "Select",
+      "label": "Billing Method",
+      "options": "\nTime and Material\nFixed Fee\nRetainer\nMilestone Based\nCapped T and M\nSuccess Fee\nBlended Rate\nPro Bono"
+    },
+    {
+      "fieldname": "income_account",
+      "fieldtype": "Link",
+      "label": "Income Account",
+      "options": "Account"
+    },
+    {
+      "fieldname": "cost_center",
+      "fieldtype": "Link",
+      "label": "Cost Center",
+      "options": "Cost Center"
+    },
+    {
+      "fieldname": "section_deliverables",
+      "fieldtype": "Section Break",
+      "label": "Deliverables"
+    },
+    {
+      "fieldname": "deliverables",
+      "fieldtype": "Table",
+      "label": "Deliverables",
+      "options": "Engagement Deliverable"
+    },
+    {
+      "fieldname": "section_detail",
+      "fieldtype": "Section Break",
+      "label": "Details"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Small Text",
+      "label": "Description"
+    },
+    {
+      "fieldname": "scope_of_work",
+      "fieldtype": "Text Editor",
+      "label": "Scope of Work"
+    },
+    {
+      "fieldname": "section_status",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Prospect\nActive\nOn Hold\nCompleted\nCancelled",
+      "default": "Prospect",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Engagement",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "is_submittable": 1,
+  "module": "Professional Services",
+  "name": "Engagement",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "engagement_name",
+  "track_changes": 1
+}

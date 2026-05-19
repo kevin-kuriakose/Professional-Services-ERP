@@ -1,0 +1,32 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "party_name",
+    "relationship"
+  ],
+  "fields": [
+    {
+      "fieldname": "party_name",
+      "fieldtype": "Data",
+      "label": "Party Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "relationship",
+      "fieldtype": "Data",
+      "label": "Relationship",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Conflict Check Party",
+  "owner": "Administrator",
+  "permissions": [],
+  "track_changes": 0
+}

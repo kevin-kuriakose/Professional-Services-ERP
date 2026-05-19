@@ -1,0 +1,103 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "retainer_agreement",
+    "review_date",
+    "hours_used_last_period",
+    "hours_remaining",
+    "client_satisfaction_score",
+    "renewal_recommendation",
+    "reviewed_by",
+    "action_items"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "RRV-.YYYY.-.#####",
+      "default": "RRV-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "retainer_agreement",
+      "fieldtype": "Link",
+      "label": "Retainer Agreement",
+      "options": "Retainer Agreement",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "review_date",
+      "fieldtype": "Date",
+      "label": "Review Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "hours_used_last_period",
+      "fieldtype": "Float",
+      "label": "Hours Used Last Period"
+    },
+    {
+      "fieldname": "hours_remaining",
+      "fieldtype": "Float",
+      "label": "Hours Remaining"
+    },
+    {
+      "fieldname": "client_satisfaction_score",
+      "fieldtype": "Select",
+      "label": "Client Satisfaction Score",
+      "options": "\n1\n2\n3\n4\n5"
+    },
+    {
+      "fieldname": "renewal_recommendation",
+      "fieldtype": "Select",
+      "label": "Renewal Recommendation",
+      "options": "\nRenew\nUpgrade\nDowngrade\nTerminate"
+    },
+    {
+      "fieldname": "reviewed_by",
+      "fieldtype": "Link",
+      "label": "Reviewed By",
+      "options": "User"
+    },
+    {
+      "fieldname": "action_items",
+      "fieldtype": "Text Editor",
+      "label": "Action Items"
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Retainer Review",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "retainer_agreement",
+  "track_changes": 1
+}

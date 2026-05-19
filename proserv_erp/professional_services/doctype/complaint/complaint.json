@@ -1,0 +1,127 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "client",
+    "complaint_date",
+    "description",
+    "severity",
+    "assigned_to",
+    "resolution_date",
+    "resolution_description",
+    "client_satisfied",
+    "status",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "COMP-.YYYY.-.#####",
+      "default": "COMP-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "client",
+      "fieldtype": "Link",
+      "label": "Client",
+      "options": "Client",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "complaint_date",
+      "fieldtype": "Date",
+      "label": "Complaint Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text Editor",
+      "label": "Description"
+    },
+    {
+      "fieldname": "severity",
+      "fieldtype": "Select",
+      "label": "Severity",
+      "options": "Low\nMedium\nHigh\nCritical",
+      "default": "Medium",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "assigned_to",
+      "fieldtype": "Link",
+      "label": "Assigned To",
+      "options": "User"
+    },
+    {
+      "fieldname": "resolution_date",
+      "fieldtype": "Date",
+      "label": "Resolution Date"
+    },
+    {
+      "fieldname": "resolution_description",
+      "fieldtype": "Text Editor",
+      "label": "Resolution Description"
+    },
+    {
+      "fieldname": "client_satisfied",
+      "fieldtype": "Check",
+      "label": "Client Satisfied"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Open\nIn Progress\nResolved\nEscalated",
+      "default": "Open",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Complaint",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "is_submittable": 1,
+  "module": "Professional Services",
+  "name": "Complaint",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "client",
+  "track_changes": 1
+}

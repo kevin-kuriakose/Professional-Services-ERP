@@ -1,0 +1,4 @@
+include proserv_erp/templates/*
+recursive-include proserv_erp/public *
+recursive-include proserv_erp/templates *
+recursive-include proserv_erp/www *

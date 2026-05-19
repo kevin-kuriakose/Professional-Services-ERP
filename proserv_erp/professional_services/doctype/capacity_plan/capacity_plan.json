@@ -1,0 +1,76 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "month",
+    "practice_area_filter",
+    "approved_by",
+    "staff"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "CAP-.YYYY.-.#####",
+      "default": "CAP-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "month",
+      "fieldtype": "Data",
+      "label": "Month",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "practice_area_filter",
+      "fieldtype": "Select",
+      "label": "Practice Area Filter",
+      "options": "\nAll\nLegal Services\nAccounting and Audit\nTax and GST\nManagement Consulting\nIT Consulting\nStrategy Advisory\nHR Consulting\nFinancial Advisory\nEngineering Consulting\nDesign and Creative"
+    },
+    {
+      "fieldname": "approved_by",
+      "fieldtype": "Link",
+      "label": "Approved By",
+      "options": "User"
+    },
+    {
+      "fieldname": "staff",
+      "fieldtype": "Table",
+      "label": "Staff",
+      "options": "Capacity Plan Staff"
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Capacity Plan",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "month",
+  "track_changes": 1
+}

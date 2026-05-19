@@ -1,0 +1,126 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "staff",
+    "engagement",
+    "role",
+    "allocated_hours_per_week",
+    "start_date",
+    "end_date",
+    "billing_rate",
+    "allocation_percent",
+    "status",
+    "section_notes",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "RA-.YYYY.-.#####",
+      "default": "RA-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "staff",
+      "fieldtype": "Link",
+      "label": "Staff",
+      "options": "Staff Profile",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "engagement",
+      "fieldtype": "Link",
+      "label": "Engagement",
+      "options": "Engagement",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "role",
+      "fieldtype": "Select",
+      "label": "Role",
+      "options": "\nPartner\nDirector\nAssociate Director\nSenior Manager\nManager\nSenior Consultant\nConsultant\nAnalyst\nJunior Analyst\nSupport Staff"
+    },
+    {
+      "fieldname": "allocated_hours_per_week",
+      "fieldtype": "Float",
+      "label": "Allocated Hours Per Week"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "billing_rate",
+      "fieldtype": "Currency",
+      "label": "Billing Rate"
+    },
+    {
+      "fieldname": "allocation_percent",
+      "fieldtype": "Percent",
+      "label": "Allocation %"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Planned\nConfirmed\nCompleted",
+      "default": "Planned",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "section_notes",
+      "fieldtype": "Section Break",
+      "label": "Notes"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Resource Allocation",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "staff",
+  "track_changes": 1
+}

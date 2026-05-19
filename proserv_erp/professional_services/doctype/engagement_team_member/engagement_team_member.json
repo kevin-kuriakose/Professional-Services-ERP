@@ -1,0 +1,41 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "staff",
+    "role",
+    "billing_rate"
+  ],
+  "fields": [
+    {
+      "fieldname": "staff",
+      "fieldtype": "Link",
+      "label": "Staff",
+      "options": "Staff Profile",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "role",
+      "fieldtype": "Select",
+      "label": "Role",
+      "options": "\nPartner\nDirector\nAssociate Director\nSenior Manager\nManager\nSenior Consultant\nConsultant\nAnalyst\nJunior Analyst\nSupport Staff",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "billing_rate",
+      "fieldtype": "Currency",
+      "label": "Billing Rate",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Engagement Team Member",
+  "owner": "Administrator",
+  "permissions": [],
+  "track_changes": 0
+}

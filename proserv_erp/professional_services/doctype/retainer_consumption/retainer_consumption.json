@@ -1,0 +1,135 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "retainer_agreement",
+    "month",
+    "opening_balance_hours",
+    "hours_consumed",
+    "hours_added",
+    "closing_balance_hours",
+    "overage_hours",
+    "overage_billed_amount",
+    "erpnext_sales_invoice",
+    "status",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "RC-.YYYY.-.#####",
+      "default": "RC-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "retainer_agreement",
+      "fieldtype": "Link",
+      "label": "Retainer Agreement",
+      "options": "Retainer Agreement",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "month",
+      "fieldtype": "Data",
+      "label": "Month",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "opening_balance_hours",
+      "fieldtype": "Float",
+      "label": "Opening Balance Hours"
+    },
+    {
+      "fieldname": "hours_consumed",
+      "fieldtype": "Float",
+      "label": "Hours Consumed"
+    },
+    {
+      "fieldname": "hours_added",
+      "fieldtype": "Float",
+      "label": "Hours Added"
+    },
+    {
+      "fieldname": "closing_balance_hours",
+      "fieldtype": "Float",
+      "label": "Closing Balance Hours",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "overage_hours",
+      "fieldtype": "Float",
+      "label": "Overage Hours",
+      "read_only": 1
+    },
+    {
+      "fieldname": "overage_billed_amount",
+      "fieldtype": "Currency",
+      "label": "Overage Billed Amount"
+    },
+    {
+      "fieldname": "erpnext_sales_invoice",
+      "fieldtype": "Link",
+      "label": "ERPNext Sales Invoice",
+      "options": "Sales Invoice",
+      "read_only": 1,
+      "no_copy": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nSubmitted\nInvoiced",
+      "default": "Draft",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Retainer Consumption",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "is_submittable": 1,
+  "module": "Professional Services",
+  "name": "Retainer Consumption",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "retainer_agreement",
+  "track_changes": 1
+}

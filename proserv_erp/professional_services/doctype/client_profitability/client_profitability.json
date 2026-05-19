@@ -1,0 +1,92 @@
+{
+  "actions": [],
+  "autoname": "field:client",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "client",
+    "engagement_count",
+    "total_billed",
+    "total_collected",
+    "outstanding",
+    "write_offs",
+    "relationship_age",
+    "nps_score"
+  ],
+  "fields": [
+    {
+      "fieldname": "client",
+      "fieldtype": "Link",
+      "label": "Client",
+      "options": "Client",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "engagement_count",
+      "fieldtype": "Int",
+      "label": "Engagement Count"
+    },
+    {
+      "fieldname": "total_billed",
+      "fieldtype": "Currency",
+      "label": "Total Billed",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "total_collected",
+      "fieldtype": "Currency",
+      "label": "Total Collected"
+    },
+    {
+      "fieldname": "outstanding",
+      "fieldtype": "Currency",
+      "label": "Outstanding",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "write_offs",
+      "fieldtype": "Currency",
+      "label": "Write Offs"
+    },
+    {
+      "fieldname": "relationship_age",
+      "fieldtype": "Int",
+      "label": "Relationship Age (months)"
+    },
+    {
+      "fieldname": "nps_score",
+      "fieldtype": "Float",
+      "label": "NPS Score"
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Client Profitability",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "client",
+  "track_changes": 1
+}

@@ -1,0 +1,124 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "filing_name",
+    "engagement",
+    "client",
+    "regulatory_body",
+    "filing_type",
+    "due_date",
+    "filed_date",
+    "filed_by",
+    "reference_number",
+    "penalties",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "RF-.YYYY.-.#####",
+      "default": "RF-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "filing_name",
+      "fieldtype": "Data",
+      "label": "Filing Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "engagement",
+      "fieldtype": "Link",
+      "label": "Engagement",
+      "options": "Engagement"
+    },
+    {
+      "fieldname": "client",
+      "fieldtype": "Link",
+      "label": "Client",
+      "options": "Client",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "regulatory_body",
+      "fieldtype": "Data",
+      "label": "Regulatory Body"
+    },
+    {
+      "fieldname": "filing_type",
+      "fieldtype": "Data",
+      "label": "Filing Type"
+    },
+    {
+      "fieldname": "due_date",
+      "fieldtype": "Date",
+      "label": "Due Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "filed_date",
+      "fieldtype": "Date",
+      "label": "Filed Date"
+    },
+    {
+      "fieldname": "filed_by",
+      "fieldtype": "Link",
+      "label": "Filed By",
+      "options": "User"
+    },
+    {
+      "fieldname": "reference_number",
+      "fieldtype": "Data",
+      "label": "Reference Number"
+    },
+    {
+      "fieldname": "penalties",
+      "fieldtype": "Currency",
+      "label": "Penalties"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Pending\nFiled\nOverdue",
+      "default": "Pending",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Regulatory Filing",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "filing_name",
+  "track_changes": 1
+}

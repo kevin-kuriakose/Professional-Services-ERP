@@ -1,0 +1,129 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "opportunity_name",
+    "lead",
+    "client",
+    "service_type",
+    "estimated_value",
+    "estimated_start_date",
+    "probability_percent",
+    "proposal_required",
+    "assigned_partner",
+    "stage",
+    "section_notes",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "OPP-.YYYY.-.#####",
+      "default": "OPP-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "opportunity_name",
+      "fieldtype": "Data",
+      "label": "Opportunity Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "lead",
+      "fieldtype": "Link",
+      "label": "Lead",
+      "options": "PS Lead"
+    },
+    {
+      "fieldname": "client",
+      "fieldtype": "Link",
+      "label": "Client",
+      "options": "Client",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "service_type",
+      "fieldtype": "Link",
+      "label": "Service Type",
+      "options": "Service"
+    },
+    {
+      "fieldname": "estimated_value",
+      "fieldtype": "Currency",
+      "label": "Estimated Value"
+    },
+    {
+      "fieldname": "estimated_start_date",
+      "fieldtype": "Date",
+      "label": "Estimated Start Date"
+    },
+    {
+      "fieldname": "probability_percent",
+      "fieldtype": "Percent",
+      "label": "Probability %"
+    },
+    {
+      "fieldname": "proposal_required",
+      "fieldtype": "Check",
+      "label": "Proposal Required"
+    },
+    {
+      "fieldname": "assigned_partner",
+      "fieldtype": "Link",
+      "label": "Assigned Partner",
+      "options": "User"
+    },
+    {
+      "fieldname": "stage",
+      "fieldtype": "Select",
+      "label": "Stage",
+      "options": "Qualification\nProposal\nNegotiation\nClosed Won\nClosed Lost",
+      "default": "Qualification",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "section_notes",
+      "fieldtype": "Section Break",
+      "label": "Notes"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Text Editor",
+      "label": "Notes"
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Opportunity",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "opportunity_name",
+  "track_changes": 1
+}

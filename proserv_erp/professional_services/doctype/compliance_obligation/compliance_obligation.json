@@ -1,0 +1,106 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "obligation_name",
+    "applicable_service_type",
+    "regulatory_body",
+    "frequency",
+    "due_date",
+    "responsible_staff",
+    "filing_reference",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "CO-.YYYY.-.#####",
+      "default": "CO-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "obligation_name",
+      "fieldtype": "Data",
+      "label": "Obligation Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "applicable_service_type",
+      "fieldtype": "Select",
+      "label": "Applicable Service Type",
+      "options": "\nLegal\nAccounting\nIT\nAll",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "regulatory_body",
+      "fieldtype": "Data",
+      "label": "Regulatory Body"
+    },
+    {
+      "fieldname": "frequency",
+      "fieldtype": "Select",
+      "label": "Frequency",
+      "options": "\nAnnual\nQuarterly\nMonthly\nOne Time"
+    },
+    {
+      "fieldname": "due_date",
+      "fieldtype": "Date",
+      "label": "Due Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "responsible_staff",
+      "fieldtype": "Link",
+      "label": "Responsible Staff",
+      "options": "Staff Profile"
+    },
+    {
+      "fieldname": "filing_reference",
+      "fieldtype": "Data",
+      "label": "Filing Reference"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Pending\nFiled\nOverdue",
+      "default": "Pending",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Compliance Obligation",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "obligation_name",
+  "track_changes": 1
+}

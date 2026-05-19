@@ -1,0 +1,104 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "retainer_agreement",
+    "month",
+    "task_date",
+    "staff",
+    "task_description",
+    "hours",
+    "billable",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "RTL-.YYYY.-.#####",
+      "default": "RTL-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "retainer_agreement",
+      "fieldtype": "Link",
+      "label": "Retainer Agreement",
+      "options": "Retainer Agreement",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "month",
+      "fieldtype": "Data",
+      "label": "Month",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "task_date",
+      "fieldtype": "Date",
+      "label": "Task Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "staff",
+      "fieldtype": "Link",
+      "label": "Staff",
+      "options": "Staff Profile",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "task_description",
+      "fieldtype": "Small Text",
+      "label": "Task Description"
+    },
+    {
+      "fieldname": "hours",
+      "fieldtype": "Float",
+      "label": "Hours",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "billable",
+      "fieldtype": "Check",
+      "label": "Billable"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Retainer Task Log",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "retainer_agreement",
+  "track_changes": 1
+}

@@ -1,0 +1,103 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "engagement",
+    "review_date",
+    "reviewed_by",
+    "delivery_quality_rating",
+    "team_performance_rating",
+    "scope_creep_noted",
+    "lessons_learned",
+    "action_items"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "IR-.YYYY.-.#####",
+      "default": "IR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "engagement",
+      "fieldtype": "Link",
+      "label": "Engagement",
+      "options": "Engagement",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "review_date",
+      "fieldtype": "Date",
+      "label": "Review Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "reviewed_by",
+      "fieldtype": "Link",
+      "label": "Reviewed By",
+      "options": "User"
+    },
+    {
+      "fieldname": "delivery_quality_rating",
+      "fieldtype": "Select",
+      "label": "Delivery Quality Rating",
+      "options": "\n1\n2\n3\n4\n5"
+    },
+    {
+      "fieldname": "team_performance_rating",
+      "fieldtype": "Select",
+      "label": "Team Performance Rating",
+      "options": "\n1\n2\n3\n4\n5"
+    },
+    {
+      "fieldname": "scope_creep_noted",
+      "fieldtype": "Check",
+      "label": "Scope Creep Noted"
+    },
+    {
+      "fieldname": "lessons_learned",
+      "fieldtype": "Text Editor",
+      "label": "Lessons Learned"
+    },
+    {
+      "fieldname": "action_items",
+      "fieldtype": "Text Editor",
+      "label": "Action Items"
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Internal Review",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "engagement",
+  "track_changes": 1
+}

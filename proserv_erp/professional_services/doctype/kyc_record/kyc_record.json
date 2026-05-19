@@ -1,0 +1,114 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "client",
+    "kyc_type",
+    "identity_document_type",
+    "document_number",
+    "document_expiry",
+    "verified_by",
+    "verified_date",
+    "risk_level",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "KYC-.YYYY.-.#####",
+      "default": "KYC-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "client",
+      "fieldtype": "Link",
+      "label": "Client",
+      "options": "Client",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "kyc_type",
+      "fieldtype": "Select",
+      "label": "KYC Type",
+      "options": "\nIndividual\nCompany",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "identity_document_type",
+      "fieldtype": "Select",
+      "label": "Identity Document Type",
+      "options": "\nAadhaar\nPAN\nPassport\nDriving Licence\nGST Certificate\nCertificate of Incorporation\nPartnership Deed\nTrust Deed\nBoard Resolution\nUtility Bill"
+    },
+    {
+      "fieldname": "document_number",
+      "fieldtype": "Data",
+      "label": "Document Number"
+    },
+    {
+      "fieldname": "document_expiry",
+      "fieldtype": "Date",
+      "label": "Document Expiry",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "verified_by",
+      "fieldtype": "Link",
+      "label": "Verified By",
+      "options": "User"
+    },
+    {
+      "fieldname": "verified_date",
+      "fieldtype": "Date",
+      "label": "Verified Date"
+    },
+    {
+      "fieldname": "risk_level",
+      "fieldtype": "Select",
+      "label": "Risk Level",
+      "options": "\nLow\nMedium\nHigh",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Pending\nVerified\nExpired\nRejected",
+      "default": "Pending",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Professional Services",
+  "name": "KYC Record",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "client",
+  "track_changes": 1
+}

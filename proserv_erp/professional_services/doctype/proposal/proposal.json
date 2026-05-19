@@ -1,0 +1,127 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "client",
+    "engagement_opportunity",
+    "prepared_by",
+    "submitted_date",
+    "validity_date",
+    "services_included",
+    "total_fee",
+    "win_probability",
+    "status",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "PROP-.YYYY.-.#####",
+      "default": "PROP-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "client",
+      "fieldtype": "Link",
+      "label": "Client",
+      "options": "Client",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "engagement_opportunity",
+      "fieldtype": "Link",
+      "label": "Opportunity",
+      "options": "Opportunity"
+    },
+    {
+      "fieldname": "prepared_by",
+      "fieldtype": "Link",
+      "label": "Prepared By",
+      "options": "User"
+    },
+    {
+      "fieldname": "submitted_date",
+      "fieldtype": "Date",
+      "label": "Submitted Date"
+    },
+    {
+      "fieldname": "validity_date",
+      "fieldtype": "Date",
+      "label": "Validity Date",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "services_included",
+      "fieldtype": "Table",
+      "label": "Services Included",
+      "options": "Proposal Service Item"
+    },
+    {
+      "fieldname": "total_fee",
+      "fieldtype": "Currency",
+      "label": "Total Fee",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "win_probability",
+      "fieldtype": "Percent",
+      "label": "Win Probability"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nSubmitted\nWon\nLost\nNo Decision",
+      "default": "Draft",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Proposal",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "is_submittable": 1,
+  "module": "Professional Services",
+  "name": "Proposal",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "client",
+  "track_changes": 1
+}

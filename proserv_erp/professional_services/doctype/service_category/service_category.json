@@ -1,0 +1,75 @@
+{
+  "actions": [],
+  "autoname": "field:category_name",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "category_name",
+    "practice_area",
+    "description",
+    "billable",
+    "default_billing_method"
+  ],
+  "fields": [
+    {
+      "fieldname": "category_name",
+      "fieldtype": "Data",
+      "label": "Category Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "practice_area",
+      "fieldtype": "Select",
+      "label": "Practice Area",
+      "options": "\nLegal Services\nAccounting and Audit\nTax and GST\nManagement Consulting\nIT Consulting\nStrategy Advisory\nHR Consulting\nFinancial Advisory\nEngineering Consulting\nDesign and Creative\nMarketing and Branding\nEnvironmental Consulting\nESG and Sustainability\nM and A Advisory\nRecruitment and Staffing\nTraining and L and D\nPayroll Services\nCompany Secretarial\nCyber Security\nData and Analytics",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Small Text",
+      "label": "Description"
+    },
+    {
+      "fieldname": "billable",
+      "fieldtype": "Check",
+      "label": "Billable",
+      "default": "1"
+    },
+    {
+      "fieldname": "default_billing_method",
+      "fieldtype": "Select",
+      "label": "Default Billing Method",
+      "options": "\nTime and Material\nFixed Fee\nRetainer\nMilestone Based\nCapped T and M\nSuccess Fee\nBlended Rate\nPro Bono"
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Service Category",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "category_name",
+  "track_changes": 1
+}

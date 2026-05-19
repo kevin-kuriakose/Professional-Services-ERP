@@ -1,0 +1,56 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "staff",
+    "total_capacity_hours",
+    "allocated_hours",
+    "available_hours",
+    "utilization_percent"
+  ],
+  "fields": [
+    {
+      "fieldname": "staff",
+      "fieldtype": "Link",
+      "label": "Staff",
+      "options": "Staff Profile",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "total_capacity_hours",
+      "fieldtype": "Float",
+      "label": "Total Capacity Hours",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "allocated_hours",
+      "fieldtype": "Float",
+      "label": "Allocated Hours",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "available_hours",
+      "fieldtype": "Float",
+      "label": "Available Hours",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "utilization_percent",
+      "fieldtype": "Percent",
+      "label": "Utilization %",
+      "read_only": 1,
+      "in_list_view": 1
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Capacity Plan Staff",
+  "owner": "Administrator",
+  "permissions": [],
+  "track_changes": 0
+}

@@ -1,0 +1,168 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "retainer_name",
+    "client",
+    "engagement",
+    "monthly_fee",
+    "included_hours_per_month",
+    "rollover_hours",
+    "max_rollover_hours",
+    "billing_day_of_month",
+    "start_date",
+    "end_date",
+    "auto_renew",
+    "notice_period_days",
+    "income_account",
+    "cost_center",
+    "status",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "RET-.YYYY.-.#####",
+      "default": "RET-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "retainer_name",
+      "fieldtype": "Data",
+      "label": "Retainer Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "client",
+      "fieldtype": "Link",
+      "label": "Client",
+      "options": "Client",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "engagement",
+      "fieldtype": "Link",
+      "label": "Engagement",
+      "options": "Engagement"
+    },
+    {
+      "fieldname": "monthly_fee",
+      "fieldtype": "Currency",
+      "label": "Monthly Fee",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "included_hours_per_month",
+      "fieldtype": "Float",
+      "label": "Included Hours Per Month"
+    },
+    {
+      "fieldname": "rollover_hours",
+      "fieldtype": "Check",
+      "label": "Rollover Hours"
+    },
+    {
+      "fieldname": "max_rollover_hours",
+      "fieldtype": "Float",
+      "label": "Max Rollover Hours"
+    },
+    {
+      "fieldname": "billing_day_of_month",
+      "fieldtype": "Int",
+      "label": "Billing Day of Month",
+      "default": "1"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "auto_renew",
+      "fieldtype": "Check",
+      "label": "Auto Renew"
+    },
+    {
+      "fieldname": "notice_period_days",
+      "fieldtype": "Int",
+      "label": "Notice Period Days",
+      "default": "30"
+    },
+    {
+      "fieldname": "income_account",
+      "fieldtype": "Link",
+      "label": "Income Account",
+      "options": "Account"
+    },
+    {
+      "fieldname": "cost_center",
+      "fieldtype": "Link",
+      "label": "Cost Center",
+      "options": "Cost Center"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nExpired\nTerminated",
+      "default": "Active",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Retainer Agreement",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "is_submittable": 1,
+  "module": "Professional Services",
+  "name": "Retainer Agreement",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "retainer_name",
+  "track_changes": 1
+}

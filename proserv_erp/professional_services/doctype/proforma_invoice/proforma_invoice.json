@@ -1,0 +1,146 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "client",
+    "engagement",
+    "billing_period",
+    "line_items",
+    "section_totals",
+    "subtotal",
+    "discount",
+    "gst",
+    "total",
+    "section_notes",
+    "notes",
+    "status",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "PINV-.YYYY.-.#####",
+      "default": "PINV-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "client",
+      "fieldtype": "Link",
+      "label": "Client",
+      "options": "Client",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "engagement",
+      "fieldtype": "Link",
+      "label": "Engagement",
+      "options": "Engagement",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "billing_period",
+      "fieldtype": "Data",
+      "label": "Billing Period"
+    },
+    {
+      "fieldname": "line_items",
+      "fieldtype": "Table",
+      "label": "Line Items",
+      "options": "Proforma Invoice Item"
+    },
+    {
+      "fieldname": "section_totals",
+      "fieldtype": "Section Break",
+      "label": "Totals"
+    },
+    {
+      "fieldname": "subtotal",
+      "fieldtype": "Currency",
+      "label": "Subtotal",
+      "read_only": 1
+    },
+    {
+      "fieldname": "discount",
+      "fieldtype": "Currency",
+      "label": "Discount"
+    },
+    {
+      "fieldname": "gst",
+      "fieldtype": "Currency",
+      "label": "GST",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total",
+      "fieldtype": "Currency",
+      "label": "Total",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "section_notes",
+      "fieldtype": "Section Break",
+      "label": "Notes"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Text Editor",
+      "label": "Notes"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nSent\nApproved\nConverted",
+      "default": "Draft",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Proforma Invoice",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "is_submittable": 1,
+  "module": "Professional Services",
+  "name": "Proforma Invoice",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "client",
+  "track_changes": 1
+}

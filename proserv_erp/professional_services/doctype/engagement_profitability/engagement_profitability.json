@@ -1,0 +1,89 @@
+{
+  "actions": [],
+  "autoname": "field:engagement",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "engagement",
+    "total_billed",
+    "total_cost",
+    "gross_margin",
+    "margin_percent",
+    "realization_rate",
+    "write_off_amount"
+  ],
+  "fields": [
+    {
+      "fieldname": "engagement",
+      "fieldtype": "Link",
+      "label": "Engagement",
+      "options": "Engagement",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "total_billed",
+      "fieldtype": "Currency",
+      "label": "Total Billed",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "total_cost",
+      "fieldtype": "Currency",
+      "label": "Total Cost"
+    },
+    {
+      "fieldname": "gross_margin",
+      "fieldtype": "Currency",
+      "label": "Gross Margin",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "margin_percent",
+      "fieldtype": "Percent",
+      "label": "Margin %",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "realization_rate",
+      "fieldtype": "Percent",
+      "label": "Realization Rate"
+    },
+    {
+      "fieldname": "write_off_amount",
+      "fieldtype": "Currency",
+      "label": "Write Off Amount"
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Engagement Profitability",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "engagement",
+  "track_changes": 1
+}

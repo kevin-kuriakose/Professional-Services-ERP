@@ -1,0 +1,108 @@
+{
+  "actions": [],
+  "autoname": "field:service_name",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "service_name",
+    "category",
+    "description",
+    "standard_rate_per_hour",
+    "standard_fixed_fee",
+    "gst_applicable",
+    "hsn_sac_code",
+    "deliverable_type",
+    "estimated_hours",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "service_name",
+      "fieldtype": "Data",
+      "label": "Service Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "category",
+      "fieldtype": "Link",
+      "label": "Category",
+      "options": "Service Category",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Small Text",
+      "label": "Description"
+    },
+    {
+      "fieldname": "standard_rate_per_hour",
+      "fieldtype": "Currency",
+      "label": "Standard Rate Per Hour"
+    },
+    {
+      "fieldname": "standard_fixed_fee",
+      "fieldtype": "Currency",
+      "label": "Standard Fixed Fee"
+    },
+    {
+      "fieldname": "gst_applicable",
+      "fieldtype": "Check",
+      "label": "GST Applicable",
+      "default": "1"
+    },
+    {
+      "fieldname": "hsn_sac_code",
+      "fieldtype": "Data",
+      "label": "HSN / SAC Code"
+    },
+    {
+      "fieldname": "deliverable_type",
+      "fieldtype": "Select",
+      "label": "Deliverable Type",
+      "options": "\nReport\nDocument\nSoftware\nAdvisory\nTraining"
+    },
+    {
+      "fieldname": "estimated_hours",
+      "fieldtype": "Float",
+      "label": "Estimated Hours"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nInactive",
+      "default": "Active",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Service",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "service_name",
+  "track_changes": 1
+}

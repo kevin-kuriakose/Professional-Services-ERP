@@ -1,0 +1,46 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "service",
+    "description",
+    "estimated_hours",
+    "fee"
+  ],
+  "fields": [
+    {
+      "fieldname": "service",
+      "fieldtype": "Link",
+      "label": "Service",
+      "options": "Service",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Data",
+      "label": "Description",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "estimated_hours",
+      "fieldtype": "Float",
+      "label": "Estimated Hours",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "fee",
+      "fieldtype": "Currency",
+      "label": "Fee",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Proposal Service Item",
+  "owner": "Administrator",
+  "permissions": [],
+  "track_changes": 0
+}

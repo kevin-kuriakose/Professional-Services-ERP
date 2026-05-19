@@ -1,0 +1,40 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "service",
+    "staff_level",
+    "rate_per_hour"
+  ],
+  "fields": [
+    {
+      "fieldname": "service",
+      "fieldtype": "Link",
+      "label": "Service",
+      "options": "Service",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "staff_level",
+      "fieldtype": "Select",
+      "label": "Staff Level",
+      "options": "\nPartner\nDirector\nAssociate Director\nSenior Manager\nManager\nSenior Consultant\nConsultant\nAnalyst\nJunior Analyst\nSupport Staff\nIntern",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "rate_per_hour",
+      "fieldtype": "Currency",
+      "label": "Rate Per Hour",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Rate Card Item",
+  "owner": "Administrator",
+  "permissions": [],
+  "track_changes": 0
+}

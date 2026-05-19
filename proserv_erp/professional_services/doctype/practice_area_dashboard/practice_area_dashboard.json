@@ -1,0 +1,107 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "practice_area",
+    "month",
+    "engagements_active",
+    "new_engagements",
+    "completed",
+    "total_billed",
+    "total_hours",
+    "average_realization_rate",
+    "top_clients"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "PAD-.YYYY.-.#####",
+      "default": "PAD-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "practice_area",
+      "fieldtype": "Select",
+      "label": "Practice Area",
+      "options": "\nLegal Services\nAccounting and Audit\nTax and GST\nManagement Consulting\nIT Consulting\nStrategy Advisory\nHR Consulting\nFinancial Advisory\nEngineering Consulting\nDesign and Creative\nMarketing and Branding\nEnvironmental Consulting\nESG and Sustainability\nM and A Advisory\nRecruitment and Staffing\nTraining and L and D\nPayroll Services\nCompany Secretarial\nCyber Security\nData and Analytics",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "month",
+      "fieldtype": "Data",
+      "label": "Month",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "engagements_active",
+      "fieldtype": "Int",
+      "label": "Engagements Active"
+    },
+    {
+      "fieldname": "new_engagements",
+      "fieldtype": "Int",
+      "label": "New Engagements"
+    },
+    {
+      "fieldname": "completed",
+      "fieldtype": "Int",
+      "label": "Completed"
+    },
+    {
+      "fieldname": "total_billed",
+      "fieldtype": "Currency",
+      "label": "Total Billed",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "total_hours",
+      "fieldtype": "Float",
+      "label": "Total Hours"
+    },
+    {
+      "fieldname": "average_realization_rate",
+      "fieldtype": "Percent",
+      "label": "Average Realization Rate"
+    },
+    {
+      "fieldname": "top_clients",
+      "fieldtype": "Small Text",
+      "label": "Top Clients"
+    }
+  ],
+  "module": "Professional Services",
+  "name": "Practice Area Dashboard",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "permlevel": 0,
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1,
+      "share": 1
+    },
+    {
+      "role": "All",
+      "permlevel": 0,
+      "read": 1,
+      "report": 1
+    }
+  ],
+  "title_field": "practice_area",
+  "track_changes": 1
+}
