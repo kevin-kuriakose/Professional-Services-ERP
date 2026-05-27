@@ -18,9 +18,6 @@ scheduler_events = {
     "weekly": [],
 }
 
-    {"dt": "Custom Field", "filters": [["module", "=", "Professional Services"]]},
-    {"dt": "Property Setter", "filters": [["module", "=", "Professional Services"]]},
-]
 
 override_doctype_class = {
     "Service Category": "proserv_erp.professional_services.doctype.service_category.service_category.ServiceCategory",
