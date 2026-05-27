@@ -18,7 +18,6 @@ scheduler_events = {
     "weekly": [],
 }
 
-fixtures = [
     {"dt": "Custom Field", "filters": [["module", "=", "Professional Services"]]},
     {"dt": "Property Setter", "filters": [["module", "=", "Professional Services"]]},
 ]
@@ -80,3 +79,14 @@ override_doctype_class = {
 }
 
 after_install = "proserv_erp.install.after_install"
+
+fixtures = [
+    {"doctype": "Workspace", "filters": [["name", "in", ["ProEdge"]]]},
+    {"doctype": "Notification", "filters": [["document_type", "in", [
+        "Fee Note", "Engagement", "Engagement Milestone", "Retainer Agreement",
+        "Retainer Consumption", "KYC Record", "Practice Certificate",
+        "Professional Indemnity Policy", "Compliance Obligation",
+        "Regulatory Filing", "Resource Allocation", "Proposal", "PS Lead",
+        "Timesheet Entry", "Client Satisfaction Survey"
+    ]]]},
+]
