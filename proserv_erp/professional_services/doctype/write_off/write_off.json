@@ -1,107 +1,107 @@
 {
-  "actions": [],
-  "autoname": "naming_series:",
-  "creation": "2024-01-01 00:00:00.000000",
-  "doctype": "DocType",
-  "editable_grid": 1,
-  "engine": "InnoDB",
-  "field_order": [
-    "naming_series",
-    "fee_note",
-    "write_off_amount",
-    "reason",
-    "approved_by",
-    "gl_account",
-    "date",
-    "amended_from"
-  ],
-  "fields": [
-    {
-      "fieldname": "naming_series",
-      "fieldtype": "Series",
-      "label": "Series",
-      "options": "WO-.YYYY.-.#####",
-      "default": "WO-.YYYY.-.#####"
-    },
-    {
-      "fieldname": "fee_note",
-      "fieldtype": "Link",
-      "label": "Fee Note",
-      "options": "Fee Note",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "write_off_amount",
-      "fieldtype": "Currency",
-      "label": "Write Off Amount",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "reason",
-      "fieldtype": "Select",
-      "label": "Reason",
-      "options": "\nBad Debt\nGoodwill\nDispute Settlement\nError",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "approved_by",
-      "fieldtype": "Link",
-      "label": "Approved By",
-      "options": "User"
-    },
-    {
-      "fieldname": "gl_account",
-      "fieldtype": "Link",
-      "label": "GL Account",
-      "options": "Account"
-    },
-    {
-      "fieldname": "date",
-      "fieldtype": "Date",
-      "label": "Date",
-      "reqd": 1
-    },
-    {
-      "fieldname": "amended_from",
-      "fieldtype": "Link",
-      "label": "Amended From",
-      "options": "Write Off",
-      "no_copy": 1,
-      "print_hide": 1,
-      "read_only": 1
-    }
-  ],
-  "is_submittable": 1,
-  "module": "Professional Services",
-  "name": "Write Off",
-  "naming_rule": "By \"Naming Series\" field",
-  "owner": "Administrator",
-  "permissions": [
-    {
-      "role": "System Manager",
-      "permlevel": 0,
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 1,
-      "submit": 1,
-      "cancel": 1,
-      "amend": 1,
-      "report": 1,
-      "export": 1,
-      "print": 1,
-      "email": 1,
-      "share": 1
-    },
-    {
-      "role": "All",
-      "permlevel": 0,
-      "read": 1,
-      "report": 1
-    }
-  ],
-  "title_field": "fee_note",
-  "track_changes": 1
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "fee_note",
+  "write_off_amount",
+  "reason",
+  "approved_by",
+  "gl_account",
+  "date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Series",
+   "label": "Series",
+   "options": "WO-.YYYY.-.#####",
+   "default": "WO-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "fee_note",
+   "fieldtype": "Link",
+   "label": "Fee Note",
+   "options": "Fee Note",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "write_off_amount",
+   "fieldtype": "Currency",
+   "label": "Write Off Amount",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "label": "Reason",
+   "options": "\nBad Debt\nGoodwill\nDispute Settlement\nError",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "gl_account",
+   "fieldtype": "Link",
+   "label": "GL Account",
+   "options": "BA Account"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Write Off",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "module": "Professional Services",
+ "name": "Write Off",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "All",
+   "permlevel": 0,
+   "read": 1,
+   "report": 1
+  }
+ ],
+ "title_field": "fee_note",
+ "track_changes": 1
 }

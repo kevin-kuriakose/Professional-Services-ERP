@@ -79,7 +79,7 @@
       "fieldname": "erpnext_sales_invoice",
       "fieldtype": "Link",
       "label": "ERPNext Sales Invoice",
-      "options": "Sales Invoice",
+      "options": "BA Sales Invoice",
       "read_only": 1,
       "no_copy": 1
     },

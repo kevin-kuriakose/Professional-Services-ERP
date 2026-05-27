@@ -1,184 +1,184 @@
 {
-  "actions": [],
-  "autoname": "naming_series:",
-  "creation": "2024-01-01 00:00:00.000000",
-  "doctype": "DocType",
-  "editable_grid": 1,
-  "engine": "InnoDB",
-  "field_order": [
-    "naming_series",
-    "client",
-    "engagement",
-    "section_covered",
-    "milestones_covered",
-    "timesheets_covered",
-    "expenses_covered",
-    "section_totals",
-    "subtotal",
-    "discount",
-    "gst_amount",
-    "total",
-    "due_date",
-    "payment_terms",
-    "income_account",
-    "cost_center",
-    "erpnext_sales_invoice",
-    "status",
-    "amended_from"
-  ],
-  "fields": [
-    {
-      "fieldname": "naming_series",
-      "fieldtype": "Series",
-      "label": "Series",
-      "options": "FN-.YYYY.-.#####",
-      "default": "FN-.YYYY.-.#####"
-    },
-    {
-      "fieldname": "client",
-      "fieldtype": "Link",
-      "label": "Client",
-      "options": "Client",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "engagement",
-      "fieldtype": "Link",
-      "label": "Engagement",
-      "options": "Engagement",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "section_covered",
-      "fieldtype": "Section Break",
-      "label": "Covered Items"
-    },
-    {
-      "fieldname": "milestones_covered",
-      "fieldtype": "Table",
-      "label": "Milestones",
-      "options": "Fee Note Milestone"
-    },
-    {
-      "fieldname": "timesheets_covered",
-      "fieldtype": "Table",
-      "label": "Timesheets",
-      "options": "Fee Note Timesheet"
-    },
-    {
-      "fieldname": "expenses_covered",
-      "fieldtype": "Table",
-      "label": "Expenses",
-      "options": "Fee Note Expense"
-    },
-    {
-      "fieldname": "section_totals",
-      "fieldtype": "Section Break",
-      "label": "Totals"
-    },
-    {
-      "fieldname": "subtotal",
-      "fieldtype": "Currency",
-      "label": "Subtotal",
-      "read_only": 1
-    },
-    {
-      "fieldname": "discount",
-      "fieldtype": "Currency",
-      "label": "Discount"
-    },
-    {
-      "fieldname": "gst_amount",
-      "fieldtype": "Currency",
-      "label": "GST Amount",
-      "read_only": 1
-    },
-    {
-      "fieldname": "total",
-      "fieldtype": "Currency",
-      "label": "Total",
-      "read_only": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "due_date",
-      "fieldtype": "Date",
-      "label": "Due Date",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "payment_terms",
-      "fieldtype": "Data",
-      "label": "Payment Terms"
-    },
-    {
-      "fieldname": "income_account",
-      "fieldtype": "Link",
-      "label": "Income Account",
-      "options": "Account"
-    },
-    {
-      "fieldname": "cost_center",
-      "fieldtype": "Link",
-      "label": "Cost Center",
-      "options": "Cost Center"
-    },
-    {
-      "fieldname": "erpnext_sales_invoice",
-      "fieldtype": "Link",
-      "label": "ERPNext Sales Invoice",
-      "options": "Sales Invoice",
-      "read_only": 1,
-      "no_copy": 1
-    },
-    {
-      "fieldname": "status",
-      "fieldtype": "Select",
-      "label": "Status",
-      "options": "Draft\nSent\nPartially Paid\nPaid\nOverdue\nDisputed",
-      "default": "Draft",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "amended_from",
-      "fieldtype": "Link",
-      "label": "Amended From",
-      "options": "Fee Note",
-      "no_copy": 1,
-      "print_hide": 1,
-      "read_only": 1
-    }
-  ],
-  "is_submittable": 1,
-  "module": "Professional Services",
-  "name": "Fee Note",
-  "naming_rule": "By \"Naming Series\" field",
-  "owner": "Administrator",
-  "permissions": [
-    {
-      "role": "System Manager",
-      "permlevel": 0,
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 1,
-      "submit": 1,
-      "cancel": 1,
-      "amend": 1,
-      "report": 1,
-      "export": 1,
-      "print": 1,
-      "email": 1,
-      "share": 1
-    },
-    {
-      "role": "All",
-      "permlevel": 0,
-      "read": 1,
-      "report": 1
-    }
-  ],
-  "title_field": "client",
-  "track_changes": 1
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "client",
+  "engagement",
+  "section_covered",
+  "milestones_covered",
+  "timesheets_covered",
+  "expenses_covered",
+  "section_totals",
+  "subtotal",
+  "discount",
+  "gst_amount",
+  "total",
+  "due_date",
+  "payment_terms",
+  "income_account",
+  "cost_center",
+  "erpnext_sales_invoice",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Series",
+   "label": "Series",
+   "options": "FN-.YYYY.-.#####",
+   "default": "FN-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Client",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "engagement",
+   "fieldtype": "Link",
+   "label": "Engagement",
+   "options": "Engagement",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "section_covered",
+   "fieldtype": "Section Break",
+   "label": "Covered Items"
+  },
+  {
+   "fieldname": "milestones_covered",
+   "fieldtype": "Table",
+   "label": "Milestones",
+   "options": "Fee Note Milestone"
+  },
+  {
+   "fieldname": "timesheets_covered",
+   "fieldtype": "Table",
+   "label": "Timesheets",
+   "options": "Fee Note Timesheet"
+  },
+  {
+   "fieldname": "expenses_covered",
+   "fieldtype": "Table",
+   "label": "Expenses",
+   "options": "Fee Note Expense"
+  },
+  {
+   "fieldname": "section_totals",
+   "fieldtype": "Section Break",
+   "label": "Totals"
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Currency",
+   "label": "Subtotal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Currency",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "gst_amount",
+   "fieldtype": "Currency",
+   "label": "GST Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Data",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "income_account",
+   "fieldtype": "Link",
+   "label": "Income Account",
+   "options": "BA Account"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "BA Cost Center"
+  },
+  {
+   "fieldname": "erpnext_sales_invoice",
+   "fieldtype": "Link",
+   "label": "ERPNext Sales Invoice",
+   "options": "BA Sales Invoice",
+   "read_only": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSent\nPartially Paid\nPaid\nOverdue\nDisputed",
+   "default": "Draft",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Fee Note",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "module": "Professional Services",
+ "name": "Fee Note",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "All",
+   "permlevel": 0,
+   "read": 1,
+   "report": 1
+  }
+ ],
+ "title_field": "client",
+ "track_changes": 1
 }

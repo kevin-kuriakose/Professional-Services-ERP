@@ -46,7 +46,7 @@ class RetainerConsumption(Document):
             frappe.db.commit()
 
         si = frappe.get_doc({
-            "doctype": "Sales Invoice",
+            "doctype": "BA Sales Invoice",
             "customer": customer,
             "company": company,
             "posting_date": nowdate(),
@@ -68,7 +68,7 @@ class RetainerConsumption(Document):
         if not self.erpnext_sales_invoice:
             return
         try:
-            si = frappe.get_doc("Sales Invoice", self.erpnext_sales_invoice)
+            si = frappe.get_doc("BA Sales Invoice", self.erpnext_sales_invoice)
             if si.docstatus == 1:
                 si.cancel()
             self.db_set("erpnext_sales_invoice", None)

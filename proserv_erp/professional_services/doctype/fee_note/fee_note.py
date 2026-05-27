@@ -48,7 +48,7 @@ class FeeNote(Document):
         }]
 
         si = frappe.get_doc({
-            "doctype": "Sales Invoice",
+            "doctype": "BA Sales Invoice",
             "customer": customer,
             "company": company,
             "posting_date": nowdate(),
@@ -65,11 +65,11 @@ class FeeNote(Document):
     def _get_customer(self, company):
         if self.client:
             customer = frappe.db.get_value("Client", self.client, "erpnext_customer")
-            if customer and frappe.db.exists("Customer", customer):
+            if customer and frappe.db.exists("BA Customer", customer):
                 return customer
-        if not frappe.db.exists("Customer", "Walk-in Client"):
+        if not frappe.db.exists("BA Customer", "Walk-in Client"):
             frappe.get_doc({
-                "doctype": "Customer",
+                "doctype": "BA Customer",
                 "customer_name": "Walk-in Client",
                 "customer_type": "Individual",
                 "customer_group": "All Customer Groups",
@@ -96,7 +96,7 @@ class FeeNote(Document):
         if not self.erpnext_sales_invoice:
             return
         try:
-            si = frappe.get_doc("Sales Invoice", self.erpnext_sales_invoice)
+            si = frappe.get_doc("BA Sales Invoice", self.erpnext_sales_invoice)
             if si.docstatus == 1:
                 si.cancel()
             self.db_set("erpnext_sales_invoice", None)

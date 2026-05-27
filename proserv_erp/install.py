@@ -80,9 +80,9 @@ def _create_income_accounts(company, abbr):
 
 
 def _create_walk_in_customer():
-    if not frappe.db.exists("Customer", "Walk-in Client"):
+    if not frappe.db.exists("BA Customer", "Walk-in Client"):
         frappe.get_doc({
-            "doctype": "Customer",
+            "doctype": "BA Customer",
             "customer_name": "Walk-in Client",
             "customer_type": "Individual",
             "customer_group": "All Customer Groups",

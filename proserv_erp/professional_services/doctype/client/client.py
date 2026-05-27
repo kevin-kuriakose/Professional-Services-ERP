@@ -11,9 +11,9 @@ class Client(Document):
         if self.erpnext_customer:
             return
         customer_name = self.client_name
-        if not frappe.db.exists("Customer", customer_name):
+        if not frappe.db.exists("BA Customer", customer_name):
             frappe.get_doc({
-                "doctype": "Customer",
+                "doctype": "BA Customer",
                 "customer_name": customer_name,
                 "customer_type": "Company" if self.client_type == "Company" else "Individual",
                 "customer_group": "All Customer Groups",

@@ -1,194 +1,194 @@
 {
-  "actions": [],
-  "autoname": "naming_series:",
-  "creation": "2024-01-01 00:00:00.000000",
-  "doctype": "DocType",
-  "editable_grid": 1,
-  "engine": "InnoDB",
-  "field_order": [
-    "naming_series",
-    "client_name",
-    "client_type",
-    "industry",
-    "contact_person",
-    "email",
-    "phone",
-    "address",
-    "gst_number",
-    "pan",
-    "section_billing",
-    "preferred_billing_currency",
-    "payment_terms",
-    "credit_limit",
-    "section_mgmt",
-    "assigned_relationship_manager",
-    "client_tier",
-    "source",
-    "onboarding_date",
-    "status",
-    "erpnext_customer",
-    "section_notes",
-    "notes"
-  ],
-  "fields": [
-    {
-      "fieldname": "naming_series",
-      "fieldtype": "Series",
-      "label": "Series",
-      "options": "CLI-.YYYY.-.#####",
-      "default": "CLI-.YYYY.-.#####"
-    },
-    {
-      "fieldname": "client_name",
-      "fieldtype": "Data",
-      "label": "Client Name",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "client_type",
-      "fieldtype": "Select",
-      "label": "Client Type",
-      "options": "\nIndividual\nCompany\nGovernment\nNGO",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "industry",
-      "fieldtype": "Data",
-      "label": "Industry"
-    },
-    {
-      "fieldname": "contact_person",
-      "fieldtype": "Data",
-      "label": "Contact Person"
-    },
-    {
-      "fieldname": "email",
-      "fieldtype": "Data",
-      "label": "Email",
-      "options": "Email"
-    },
-    {
-      "fieldname": "phone",
-      "fieldtype": "Data",
-      "label": "Phone"
-    },
-    {
-      "fieldname": "address",
-      "fieldtype": "Small Text",
-      "label": "Address"
-    },
-    {
-      "fieldname": "gst_number",
-      "fieldtype": "Data",
-      "label": "GST Number"
-    },
-    {
-      "fieldname": "pan",
-      "fieldtype": "Data",
-      "label": "PAN"
-    },
-    {
-      "fieldname": "section_billing",
-      "fieldtype": "Section Break",
-      "label": "Billing"
-    },
-    {
-      "fieldname": "preferred_billing_currency",
-      "fieldtype": "Link",
-      "label": "Preferred Billing Currency",
-      "options": "Currency"
-    },
-    {
-      "fieldname": "payment_terms",
-      "fieldtype": "Data",
-      "label": "Payment Terms"
-    },
-    {
-      "fieldname": "credit_limit",
-      "fieldtype": "Currency",
-      "label": "Credit Limit"
-    },
-    {
-      "fieldname": "section_mgmt",
-      "fieldtype": "Section Break",
-      "label": "Management"
-    },
-    {
-      "fieldname": "assigned_relationship_manager",
-      "fieldtype": "Link",
-      "label": "Assigned Relationship Manager",
-      "options": "User"
-    },
-    {
-      "fieldname": "client_tier",
-      "fieldtype": "Select",
-      "label": "Client Tier",
-      "options": "\nStrategic\nKey Account\nStandard\nProspect\nFormer Client",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "source",
-      "fieldtype": "Select",
-      "label": "Source",
-      "options": "\nReferral\nWebsite\nCold\nEvent"
-    },
-    {
-      "fieldname": "onboarding_date",
-      "fieldtype": "Date",
-      "label": "Onboarding Date"
-    },
-    {
-      "fieldname": "status",
-      "fieldtype": "Select",
-      "label": "Status",
-      "options": "Active\nInactive\nProspect\nBlacklisted",
-      "default": "Active",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "erpnext_customer",
-      "fieldtype": "Link",
-      "label": "ERPNext Customer",
-      "options": "Customer",
-      "read_only": 1
-    },
-    {
-      "fieldname": "section_notes",
-      "fieldtype": "Section Break",
-      "label": "Notes"
-    },
-    {
-      "fieldname": "notes",
-      "fieldtype": "Text Editor",
-      "label": "Notes"
-    }
-  ],
-  "module": "Professional Services",
-  "name": "Client",
-  "naming_rule": "By \"Naming Series\" field",
-  "owner": "Administrator",
-  "permissions": [
-    {
-      "role": "System Manager",
-      "permlevel": 0,
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 1,
-      "report": 1,
-      "export": 1,
-      "print": 1,
-      "email": 1,
-      "share": 1
-    },
-    {
-      "role": "All",
-      "permlevel": 0,
-      "read": 1,
-      "report": 1
-    }
-  ],
-  "title_field": "client_name",
-  "track_changes": 1
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "client_name",
+  "client_type",
+  "industry",
+  "contact_person",
+  "email",
+  "phone",
+  "address",
+  "gst_number",
+  "pan",
+  "section_billing",
+  "preferred_billing_currency",
+  "payment_terms",
+  "credit_limit",
+  "section_mgmt",
+  "assigned_relationship_manager",
+  "client_tier",
+  "source",
+  "onboarding_date",
+  "status",
+  "erpnext_customer",
+  "section_notes",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Series",
+   "label": "Series",
+   "options": "CLI-.YYYY.-.#####",
+   "default": "CLI-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "client_type",
+   "fieldtype": "Select",
+   "label": "Client Type",
+   "options": "\nIndividual\nCompany\nGovernment\nNGO",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Data",
+   "label": "Industry"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "gst_number",
+   "fieldtype": "Data",
+   "label": "GST Number"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "section_billing",
+   "fieldtype": "Section Break",
+   "label": "Billing"
+  },
+  {
+   "fieldname": "preferred_billing_currency",
+   "fieldtype": "Link",
+   "label": "Preferred Billing Currency",
+   "options": "BA Currency"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Data",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "credit_limit",
+   "fieldtype": "Currency",
+   "label": "Credit Limit"
+  },
+  {
+   "fieldname": "section_mgmt",
+   "fieldtype": "Section Break",
+   "label": "Management"
+  },
+  {
+   "fieldname": "assigned_relationship_manager",
+   "fieldtype": "Link",
+   "label": "Assigned Relationship Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "client_tier",
+   "fieldtype": "Select",
+   "label": "Client Tier",
+   "options": "\nStrategic\nKey Account\nStandard\nProspect\nFormer Client",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "\nReferral\nWebsite\nCold\nEvent"
+  },
+  {
+   "fieldname": "onboarding_date",
+   "fieldtype": "Date",
+   "label": "Onboarding Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive\nProspect\nBlacklisted",
+   "default": "Active",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "erpnext_customer",
+   "fieldtype": "Link",
+   "label": "ERPNext Customer",
+   "options": "BA Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "module": "Professional Services",
+ "name": "Client",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "All",
+   "permlevel": 0,
+   "read": 1,
+   "report": 1
+  }
+ ],
+ "title_field": "client_name",
+ "track_changes": 1
 }

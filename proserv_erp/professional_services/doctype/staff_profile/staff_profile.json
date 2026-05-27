@@ -1,142 +1,142 @@
 {
-  "actions": [],
-  "autoname": "naming_series:",
-  "creation": "2024-01-01 00:00:00.000000",
-  "doctype": "DocType",
-  "editable_grid": 1,
-  "engine": "InnoDB",
-  "field_order": [
-    "naming_series",
-    "staff_name",
-    "employee",
-    "designation",
-    "department",
-    "practice_area",
-    "standard_billing_rate",
-    "cost_rate",
-    "target_utilization_percent",
-    "joining_date",
-    "status",
-    "section_skills",
-    "skills",
-    "section_certs",
-    "certifications"
-  ],
-  "fields": [
-    {
-      "fieldname": "naming_series",
-      "fieldtype": "Series",
-      "label": "Series",
-      "options": "SP-.YYYY.-.#####",
-      "default": "SP-.YYYY.-.#####"
-    },
-    {
-      "fieldname": "staff_name",
-      "fieldtype": "Data",
-      "label": "Staff Name",
-      "reqd": 1,
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "employee",
-      "fieldtype": "Link",
-      "label": "Employee",
-      "options": "Employee"
-    },
-    {
-      "fieldname": "designation",
-      "fieldtype": "Data",
-      "label": "Designation",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "department",
-      "fieldtype": "Data",
-      "label": "Department"
-    },
-    {
-      "fieldname": "practice_area",
-      "fieldtype": "Select",
-      "label": "Practice Area",
-      "options": "\nLegal Services\nAccounting and Audit\nTax and GST\nManagement Consulting\nIT Consulting\nStrategy Advisory\nHR Consulting\nFinancial Advisory\nEngineering Consulting\nDesign and Creative\nMarketing and Branding\nEnvironmental Consulting\nESG and Sustainability\nM and A Advisory\nRecruitment and Staffing\nTraining and L and D\nPayroll Services\nCompany Secretarial\nCyber Security\nData and Analytics",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "standard_billing_rate",
-      "fieldtype": "Currency",
-      "label": "Standard Billing Rate"
-    },
-    {
-      "fieldname": "cost_rate",
-      "fieldtype": "Currency",
-      "label": "Cost Rate"
-    },
-    {
-      "fieldname": "target_utilization_percent",
-      "fieldtype": "Percent",
-      "label": "Target Utilization %"
-    },
-    {
-      "fieldname": "joining_date",
-      "fieldtype": "Date",
-      "label": "Joining Date"
-    },
-    {
-      "fieldname": "status",
-      "fieldtype": "Select",
-      "label": "Status",
-      "options": "Active\nBench\nOn Leave\nResigned",
-      "default": "Active",
-      "in_list_view": 1
-    },
-    {
-      "fieldname": "section_skills",
-      "fieldtype": "Section Break",
-      "label": "Skills"
-    },
-    {
-      "fieldname": "skills",
-      "fieldtype": "Table",
-      "label": "Skills",
-      "options": "Staff Skill"
-    },
-    {
-      "fieldname": "section_certs",
-      "fieldtype": "Section Break",
-      "label": "Certifications"
-    },
-    {
-      "fieldname": "certifications",
-      "fieldtype": "Table",
-      "label": "Certifications",
-      "options": "Staff Certification"
-    }
-  ],
-  "module": "Professional Services",
-  "name": "Staff Profile",
-  "naming_rule": "By \"Naming Series\" field",
-  "owner": "Administrator",
-  "permissions": [
-    {
-      "role": "System Manager",
-      "permlevel": 0,
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 1,
-      "report": 1,
-      "export": 1,
-      "print": 1,
-      "email": 1,
-      "share": 1
-    },
-    {
-      "role": "All",
-      "permlevel": 0,
-      "read": 1,
-      "report": 1
-    }
-  ],
-  "title_field": "staff_name",
-  "track_changes": 1
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "staff_name",
+  "employee",
+  "designation",
+  "department",
+  "practice_area",
+  "standard_billing_rate",
+  "cost_rate",
+  "target_utilization_percent",
+  "joining_date",
+  "status",
+  "section_skills",
+  "skills",
+  "section_certs",
+  "certifications"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Series",
+   "label": "Series",
+   "options": "SP-.YYYY.-.#####",
+   "default": "SP-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "staff_name",
+   "fieldtype": "Data",
+   "label": "Staff Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "BA Employee"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "practice_area",
+   "fieldtype": "Select",
+   "label": "Practice Area",
+   "options": "\nLegal Services\nAccounting and Audit\nTax and GST\nManagement Consulting\nIT Consulting\nStrategy Advisory\nHR Consulting\nFinancial Advisory\nEngineering Consulting\nDesign and Creative\nMarketing and Branding\nEnvironmental Consulting\nESG and Sustainability\nM and A Advisory\nRecruitment and Staffing\nTraining and L and D\nPayroll Services\nCompany Secretarial\nCyber Security\nData and Analytics",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "standard_billing_rate",
+   "fieldtype": "Currency",
+   "label": "Standard Billing Rate"
+  },
+  {
+   "fieldname": "cost_rate",
+   "fieldtype": "Currency",
+   "label": "Cost Rate"
+  },
+  {
+   "fieldname": "target_utilization_percent",
+   "fieldtype": "Percent",
+   "label": "Target Utilization %"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nBench\nOn Leave\nResigned",
+   "default": "Active",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "section_skills",
+   "fieldtype": "Section Break",
+   "label": "Skills"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Table",
+   "label": "Skills",
+   "options": "Staff Skill"
+  },
+  {
+   "fieldname": "section_certs",
+   "fieldtype": "Section Break",
+   "label": "Certifications"
+  },
+  {
+   "fieldname": "certifications",
+   "fieldtype": "Table",
+   "label": "Certifications",
+   "options": "Staff Certification"
+  }
+ ],
+ "module": "Professional Services",
+ "name": "Staff Profile",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "All",
+   "permlevel": 0,
+   "read": 1,
+   "report": 1
+  }
+ ],
+ "title_field": "staff_name",
+ "track_changes": 1
 }

@@ -1,0 +1,21 @@
+{
+    "app_name": "proserv_erp",
+    "display_name": "ProEdge",
+    "description": "Professional Services & Consulting",
+    "show_modules": [
+        "Accounts", "Buying", "Selling",
+        "HR", "Projects", "CRM", "Contacts", "Support"
+    ],
+    "hide_modules": [
+        "Manufacturing", "Stock", "Agriculture",
+        "Healthcare", "Education", "Hospitality",
+        "E-commerce", "Non Profit", "Loan Management",
+        "Utilities"
+    ],
+    "optional_modules": [
+        {"module": "Assets", "label": "Asset Management", "description": "Track company assets"},
+        {"module": "Quality", "label": "Quality Management", "description": "Service quality standards"},
+        {"module": "Website", "label": "Website & CMS", "description": "Company website"},
+        {"module": "Payroll", "label": "Payroll", "description": "Staff payroll processing"}
+    ]
+}
